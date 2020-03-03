@@ -10,29 +10,30 @@ class CardGame
     if card.value = 1
       return true
   # else statement is redundant
-    else
-      return false
     end
   end
 
   # 'dif' spelling error - should be def
   # card1 and card2 should be separated with a comma
-  dif highest_card(card1 card2)
-  if card1.value > card2.value
-  # should return card1
-    return card
-  else
-    return card2
+  #should be indented
+  def highest_card(card1, card2)
+    if card1.value > card2.value
+    # should return card1
+      return card1
+    else
+      return card2
+    end
   end
-end
 # unnecessary break
-end
 
-def self.cards_total(cards)
-  # total should be assigned a value with the = operator followed by an integer
-  total
-  for card in cards
-    total += card.value
-    return "You have a total of" + total
+  #should be indented
+  def self.cards_total(cards)
+    # total should be assigned a value with the = operator followed by an integer
+    total
+    for card in cards
+      total += card.value
+      return "You have a total of" + total
+    end
   end
+  
 end
