@@ -1,4 +1,3 @@
-
 class Card
   attr_reader :suit, :value
 
@@ -6,5 +5,5 @@ class Card
     @suit = suit
     @value = value;
   end
-  
+
 end
